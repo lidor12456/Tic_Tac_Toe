@@ -21,6 +21,8 @@ if (!spaces[id]){ //check if the box wasnt clicked before
 
 if (playerWin()!= false) { //check if after the sign player has won.
     playerText.innerText = `${currentPlayer} Win!`
+    turn.innerText = ``;
+
     currentPlayer ='';
     let winningBlock = playerWin();
     winningBlock.map( box => boxes[box].style.backgroundColor=winIndic);
